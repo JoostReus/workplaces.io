@@ -1,0 +1,9 @@
+* {
+    all: unset;
+    display: revert;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #17202A;
+}
