@@ -139,16 +139,14 @@ main {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 100%;
-  }
+}
   
-  .column {
+.column {
     display: flex;
     flex-direction: column;
-    flex-basis: 100%;
-    flex: 1;
-    height: 130px
-  }
+    height: 130px;
+    width: 50%;
+}
   
 ul {
     list-style: none;
@@ -200,7 +198,7 @@ footer li {
 }
 
 /* First breakpoint (iPhone 6/7/8/X/12) */
-@media only screen and (min-width: 375px) {
+@media only screen and (min-width: 450px) {
     h1 {
         font-size: 1.6em;
         margin: 10px 10px;
@@ -212,6 +210,10 @@ footer li {
         max-width: 400px;
     }
 
+    .column {
+        width: 33%;
+    }
+
     p.subtext {
         margin: 25px 10px;
     }
@@ -221,17 +223,61 @@ footer li {
 
 /* Second breakpoint (iPad Portrait +) */
 
-  @media only screen and (min-width: 500px) {
-      .FAQ {
-          display: block;
-          max-width: 550px;
-          margin: auto;
-      }
+@media only screen and (min-width: 550px) {
+    .FAQ {
+		display: block;
+        max-width: 550px;
+        margin: auto;
+    }
 
-      p {
-          max-width: 550px;
-      }
-  }
+    p {
+		max-width: 550px;
+    }
 
-  /* Notes: 
-  For any bigger breakpoints make sure to put more flexbox columns in one row */ 
+    section {
+		margin: 125px 125px
+    }
+
+    .appstore-buttons {
+        max-width: 400px;  
+    }
+    
+    .store-button-google {
+        padding-left: 10px;
+	}
+}
+
+@media only screen and (min-width: 800px) {
+    .column {
+        width: 25%;
+	}
+   
+   .hero {
+	   display: grid;
+	   grid-template-columns: 70% 30%;
+    }
+
+	.hero-grid-1 {
+		vertical-align: baseline;
+		padding: 25% 0;
+	}
+
+    .main_screenshot {
+        width: 120%;
+        margin: 25px auto;
+	}
+}
+
+@media only screen and (min-width: 1000px) {
+	h1 {
+		font-size: 2.5em;
+	}
+
+	h2 {
+		font-size: 2em;
+	}
+
+	section:not(.hero) {
+		margin: 200px auto;
+    }
+}
