@@ -139,15 +139,14 @@ main {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    flex
-  }
+}
   
-  .column {
+.column {
     display: flex;
     flex-direction: column;
     height: 130px;
     width: 50%;
-  }
+}
   
 ul {
     list-style: none;
@@ -225,34 +224,18 @@ footer li {
 /* Second breakpoint (iPad Portrait +) */
 
 @media only screen and (min-width: 550px) {
-    .column {
-         width: 25%;
-    }
-
     .FAQ {
-          display: block;
-          max-width: 550px;
-          margin: auto;
+		display: block;
+        max-width: 550px;
+        margin: auto;
     }
 
     p {
-      max-width: 550px;
+		max-width: 550px;
     }
 
     section {
-        margin: 125px 125px
-    }
-  }
-
-@media only screen and (min-width: 550px) {
-    .hero {
-        display: grid;
-        grid-template-columns: 70% 30%;
-    }
-
-    .main_screenshot {
-        width: 250px;
-        margin: 25px auto;
+		margin: 125px 125px
     }
 
     .appstore-buttons {
@@ -261,4 +244,40 @@ footer li {
     
     .store-button-google {
         padding-left: 10px;
-  }
+	}
+}
+
+@media only screen and (min-width: 800px) {
+    .column {
+        width: 25%;
+	}
+   
+   .hero {
+	   display: grid;
+	   grid-template-columns: 70% 30%;
+    }
+
+	.hero-grid-1 {
+		vertical-align: baseline;
+		padding: 25% 0;
+	}
+
+    .main_screenshot {
+        width: 120%;
+        margin: 25px auto;
+	}
+}
+
+@media only screen and (min-width: 1000px) {
+	h1 {
+		font-size: 2.5em;
+	}
+
+	h2 {
+		font-size: 2em;
+	}
+
+	section:not(.hero) {
+		margin: 200px auto;
+    }
+}
