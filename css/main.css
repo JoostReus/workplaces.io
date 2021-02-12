@@ -75,6 +75,21 @@ main {
 }
 
 /* Third section content styling */
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  
+  .column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+    height: 130px
+  }
+  
 ul {
     list-style: none;
     /* commenting these lines as can better do this with flexbox */
@@ -112,8 +127,12 @@ li {
     
   }
 
+
 /* Second breakpoint (iPhone 6/7/8/X/12) */
 
   @media only screen and (min-width: 768px) {
     
   }
+
+  /* Notes: 
+  For any bigger breakpoints make sure to put more flexbox columns in one row */ 
