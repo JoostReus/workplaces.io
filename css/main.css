@@ -19,6 +19,11 @@ section, h1, p, main {
     margin: 15px 15px;
 }
 
+header, section, footer {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
 h1 {
     color: white;
     font-size: 1.3em;
@@ -248,6 +253,16 @@ footer li {
 }
 
 @media only screen and (min-width: 800px) {
+    nav {
+        margin: 0 5%;
+    }
+
+    .mainlogo {
+        display: inline;
+        width: 10em;
+        /* margin: 15%; */
+    }
+
     .column {
         width: 25%;
 	}
@@ -258,7 +273,6 @@ footer li {
     }
 
 	.hero-grid-1 {
-		vertical-align: baseline;
 		padding: 25% 0;
 	}
 
@@ -266,18 +280,32 @@ footer li {
         width: 120%;
         margin: 25px auto;
 	}
+
+    footer {
+        display: flex;
+        flex-direction: row;
+    }
+
+    div.footer-section {
+        width: 25%;
+        padding: 50px 50px;
+    }
+
+    section.hero {
+        margin: 5%;
+    }
+
+    section:not(.hero) {
+		margin: 200px auto;
+    }
 }
 
 @media only screen and (min-width: 1000px) {
 	h1 {
-		font-size: 2.5em;
+		font-size: 2.9em;
 	}
 
 	h2 {
-		font-size: 2em;
+		font-size: 2.5em;
 	}
-
-	section:not(.hero) {
-		margin: 200px auto;
-    }
 }
