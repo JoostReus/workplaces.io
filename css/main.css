@@ -270,6 +270,7 @@ footer li {
    .hero {
 	   display: grid;
 	   grid-template-columns: 70% 30%;
+       margin: 5%;
     }
 
 	.hero-grid-1 {
@@ -277,7 +278,7 @@ footer li {
 	}
 
     .main_screenshot {
-        width: 120%;
+        width: 100%;
         margin: 25px auto;
 	}
 
@@ -289,10 +290,6 @@ footer li {
     div.footer-section {
         width: 25%;
         padding: 50px 50px;
-    }
-
-    section.hero {
-        margin: 5%;
     }
 
     section:not(.hero) {
