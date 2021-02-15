@@ -2,8 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />    <title>Workplaces</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />    
+    <title>Workplaces</title>
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />    
+    <script src="js/main.js"></script>
 </head>
 <header>
     <nav>
@@ -15,7 +18,7 @@
 <body>
     <main>
         <section class="hero">
-			<div class="hero-grid-1">
+			<div class="hero-grid-1" data-aos="fade-up">
 				<h1>Find a place to <strong>work from.</strong></h1>
 				<h1>Without any <strong>hassle.</strong></h1>
 				<p class="subtext"> 
@@ -26,11 +29,11 @@
 					<a href="https://play.google.com/store/apps/details?id=com.mayvenstudios.glideapp.workplaces" class="store-button-google"><img src="img/Google Play Badge US.svg" alt="Google Play Store button"></a>
 				</div>
 			</div>
-			<div class="hero-grid-2">
+			<div class="hero-grid-2" data-aos="fade-up">
 				<img src="img/dark.svg" alt="Screenshot of the Workplaces iOS app in Dark Mode." class="main_screenshot">
 			</div>
         </section>
-        <section class="places-explainer">
+        <section class="places-explainer" data-aos="fade-up">
             <ul>
                 <div class="row">
                     <li class="column"><span class="emoji">☕️</span>Coffee shops</li>
@@ -40,7 +43,7 @@
                 </div>
             </ul>
         </section>
-        <section class="whatisworkplaces">
+        <section class="whatisworkplaces" data-aos="fade-up">
             <h2 class="centered-text">What is Workplaces?</h2>
             <p>An increasing amount of people are now working remote. Which is great! Less commute, less pollution, more flexibility.
             <br>
@@ -48,7 +51,7 @@
             <br>    
             <br>  Workplaces is a map-based app that is dedicated to let you easily find your ideal workplace.</p>
         </section>
-        <section class="filtersexplainer">
+        <section class="filtersexplainer" data-aos="fade-up">
             <h2 class="filtersexplainer-title">Find your ideal workplace based on</h2>
             <ul>
                 <div class='row'>
@@ -91,7 +94,7 @@
                 </div>
             </ul>
         </section>
-        <section class="FAQ">
+        <section class="FAQ" data-aos="fade-up">
             <h2 class="centered-text">FAQ</h2>
             <details>
                 <summary>What is this?</summary>
@@ -112,7 +115,7 @@
             </details>
         </section>
     </main>
-    <footer>
+    <footer data-aos="fade-up">
             <div class="footer-section">
                 <img src="img/logo.svg" alt="Workplaces Logo" class="footerlogo">
                 <p class="footer-text">Workplace is a Vaxel product</p>
@@ -145,5 +148,9 @@
                 </ul>
             </div> 
     </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
