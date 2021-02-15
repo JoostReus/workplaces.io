@@ -98,12 +98,15 @@ strong {
     font-weight: 900;
 }
 
+section.animate {
+    animation: fadein 1s;
+    animation-timing-function: ease-in-out; 
+}
+
 /* Header styling */
 main {
     width: 1000px;
     margin: 100px auto;
-    animation: fadein 1s;
-    animation-timing-function: ease-in-out; 
 }
 
 .mainlogo {
