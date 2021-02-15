@@ -141,6 +141,10 @@ main {
     margin: 25px auto;
 }
 
+.places-explainer li {
+    height: 100px;
+}
+
 /* Second section content styling */
 
 
@@ -232,7 +236,6 @@ footer li {
     p.subtext {
         margin: 25px 10px;
     }
-    
   }
 
 
@@ -301,8 +304,8 @@ footer li {
         width: 25%;
         padding: 50px 50px;
     }
-
-    section:not(.hero) {
+  
+    section:not(.hero, .places-explainer) {
 		margin: 200px auto;
     }
 }
